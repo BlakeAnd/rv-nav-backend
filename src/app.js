@@ -19,7 +19,8 @@ const vehicleRouter = require('../vehicles/vehicle-router.js');
 
 
 // allow cross origin access for dev server and hosted app
-let whiteList = ["https://www.rvnav.com", "http://localhost:3000", "https://rvnav.herokuapp.com"]
+//old deploy at "https://www.rvnav.com"
+let whiteList = ["http://localhost:3000", "https://rvnav.herokuapp.com"]
 let corsOptions = {
   origin: function (origin, callback) {
     if (whiteList.indexOf(origin) !== -1) {
